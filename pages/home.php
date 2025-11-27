@@ -1,3 +1,7 @@
+<?php
+global $posts;
+?>
+
 <h1>Všechny příspěvky</h1>
 <p class="text-muted">Vítejte na mém blogu o programování</p>
 
