@@ -1,4 +1,11 @@
 <?php
+require_once 'includes/functions.php';
+require_once 'posts.php';
+
+$stranka = 'home';
+if (isset($_GET['stranka'])) {
+    $stranka = $_GET['stranka'];
+}
 ?>
 
 <!doctype html>
@@ -15,6 +22,20 @@
 <?php include 'includes/header.php'; ?>
 
 
+<div class="container mt-4">
+    <?php
+
+    if ($stranka == 'detail') {
+        include 'pages/detail.php';
+    } elseif ($stranka == 'kontakt') {
+        include 'pages/contact.php';
+    } elseif ($stranka == 'pridat') {
+        include 'add.php';
+    } else {
+        include 'pages/home.php';
+    }
+    ?>
+</div>
 
 <?php include 'includes/footer.php'; ?>
 </body>
