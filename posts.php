@@ -17,6 +17,12 @@ $posts = [
         'nazev' => 'Nejoblíbenější místo v mém městě',
         'autor' => 'Simona Růžičková',
         'obsah' => 'Moje nejoblíbenější místo je starý park kousek od centra města. Jsou tam vysoké stromy, malé jezírko a dlouhé cesty ideální na procházky. Často tam chodím číst knížky nebo jen tak sedím na lavičce a pozoruji lidi. Na jaře tam kvetou tulipány a je to jedno z nejhezčích míst široko daleko. Park má pro mě uklidňující atmosféru a vracím se tam vždy, když si chci odpočinout.'
-    ]
+    ],
+
+    [
+        'id' => 4,
+        'nazev' => 'Pomoc',
+        'autor' => 'JU',
+        'obsah' => 'chci jit spát už prosím nechte mš  ji tsptá'
+    ],
 ];
-?>

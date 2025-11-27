@@ -1,12 +1,13 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $formData = [
-        'jmeno' => $_POST['jmeno'],
-        'email' => $_POST['email'],
-        'zprava' => $_POST['zprava']
+    $formularData = [
+            'jmeno' => $_POST['jmeno'],
+            'email' => $_POST['email'],
+            'zprava' => $_POST['zprava']
     ];
 
-    showForm($formData);
+
+    zobrazFormular($formularData);
 
     echo '<a href="index.php?stranka=kontakt" class="btn btn-primary">Napsat novou zprávu</a>';
 

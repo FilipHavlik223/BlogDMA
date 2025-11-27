@@ -1,30 +1,28 @@
 <?php
+
 require_once 'includes/functions.php';
 require_once 'posts.php';
+
 
 $stranka = 'home';
 if (isset($_GET['stranka'])) {
     $stranka = $_GET['stranka'];
 }
 ?>
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Můj Blog</title>
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<?php include 'includes/header.php'; ?>
 
+<?php include 'includes/header.php'; ?>
 
 <div class="container mt-4">
     <?php
-
     if ($stranka == 'detail') {
         include 'pages/detail.php';
     } elseif ($stranka == 'kontakt') {
@@ -37,6 +35,9 @@ if (isset($_GET['stranka'])) {
     ?>
 </div>
 
+
 <?php include 'includes/footer.php'; ?>
+
+
 </body>
 </html>

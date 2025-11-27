@@ -1,14 +1,11 @@
 <?php
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nazev = $_POST['nazev'];
     $autor = $_POST['autor'];
     $obsah = $_POST['obsah'];
 
-
     $nove_id = ulozPrispevek($nazev, $autor, $obsah);
 
-    // Zobrazení úspěšné zprávy
     echo '<div class="alert alert-success">';
     echo '<h4>Příspěvek byl úspěšně přidán!</h4>';
     echo '<p><strong>Název:</strong> ' . htmlspecialchars($nazev) . '</p>';

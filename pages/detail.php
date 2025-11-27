@@ -4,13 +4,12 @@ if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
 
-$prispevek = findForm($posts, $id);
+$prispevek = najdiPrispevek($posts, $id);
 
 if ($prispevek == null) {
     echo '<div class="alert alert-danger">Příspěvek nebyl nalezen!</div>';
     echo '<a href="index.php" class="btn btn-primary">Zpět na hlavní stránku</a>';
 } else {
-    // Zobrazení detailu příspěvku
     ?>
     <div class="mb-3">
         <a href="index.php" class="btn btn-secondary">← Zpět na přehled</a>

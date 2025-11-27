@@ -12,6 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?stranka=kontakt">Kontakt</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?stranka=pridat">Přidat příspěvek</a>
+                </li>
             </ul>
         </div>
     </div>
